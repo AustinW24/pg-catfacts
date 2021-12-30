@@ -1,0 +1,27 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    height: 100vh;
+    width: 100vw;
+}
+.cat-photo {
+    max-width: 500px;
+}
+.popup-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    height: 100%;
+    overflow: hidden;
+    transition: all 1s;
+}
+.popup-container {
+    top: 100%;
+    height: 0;
+}
+
+

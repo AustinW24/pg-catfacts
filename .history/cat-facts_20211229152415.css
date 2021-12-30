@@ -1,0 +1,8 @@
+* {
+    box-sizing: border-box;
+}
+.popup-container {
+    display: flex;
+    flex-direction: row;
+    max-width: 600px;
+}

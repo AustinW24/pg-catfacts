@@ -1,0 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+.popup-container {
+    display: flex;
+    flex-direction: column;
+}

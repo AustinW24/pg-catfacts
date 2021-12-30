@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Cat Facts</title>
+    <meta name="Cat Facts" content="List of Random Cat Facts">
+    <link rel="stylesheet" href="cat-facts.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
+        integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous" />
+</head>
+
+<body>
+    <div class="popup-container" value="show" style="visibility:hidden">
+        <div class="cat__container"></div>
+        <div class="facts__container">
+            <button id="xButton"
+                style="width: 20px; float: right; border: none; background: none; outline: inherit; cursor:pointer">
+                <i class="fas fa-times"></i>
+            </button>
+            <h1 class="header" style="align-items: center">Cat Facts</h1>
+            <div class="facts__list" style="visibility: hidden"></div>
+            <button class="facts__button" type="button">Get Facts</button>
+        </div>
+    </div>
+    <script>
+        let popup = document.querySelector(".popup-container");
+        let timer;
+            xButton.addEventListener("click", (e) => {
+                if(event.detail === 1){
+                    timer = setTimeout(() => {
+                    localStorage.setItem("multiple-clicks", "true");
+                    popup.style.display = "none";
+                    CONSOLE.LOG("hello")
+                }, 3000)
+                }
+                setTimeout(() => {
+                    localStorage.setItem("multiple-clicks", "true");
+                    popup.style.display = "none";
+                    CONSOLE.LOG("hello")
+                }, 3000)
+            })
+            popup.style.cssText = 'animation:slide-out 3s ease; animation-fill-mode: forwards';
+
+    </script>
+    <script src="./cat-facts.js"> </script>
+</body>
+
+</html>

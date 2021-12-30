@@ -1,0 +1,38 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    height: 100vh;
+    width: 100vw;
+}
+.cat-photo {
+    max-width: 300px;
+    min-height: 100%;
+}
+.popup-container {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    justify-content: center;
+}
+
+ div.popup-container {
+    min-height: 200px;
+    overflow: hidden;
+  }
+
+  div.popup-container {
+    animation: 3s slide-up;
+    margin-top: 0%;
+  }
+
+  @keyframes slide-up {
+    from {
+      margin-top: 100%;
+      height: 400px;
+    }
+    to {
+      margin-top: 0%;
+      height: 400px;
+    }
+  }

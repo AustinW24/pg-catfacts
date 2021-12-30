@@ -1,0 +1,11 @@
+* {
+    box-sizing: border-box;
+}
+.cat-photo {
+    max-width: 
+}
+.popup-container {
+    display: flex;
+    flex-direction: row;
+    max-width: 600px;
+}
